@@ -44,7 +44,9 @@ function copyMotivationQuote() {
   navigator.clipboard.writeText(text);
   showCopyMessage.classList.remove("-right-64");
   showCopyMessage.classList.add("right-5");
+  showCopyMessage.classList.add("bg-emerald-600");
   setTimeout(() => {
+    showCopyMessage.classList.remove("bg-emerald-600");
     showCopyMessage.classList.remove("right-5");
     showCopyMessage.classList.add("-right-64");
   }, 800);
@@ -54,7 +56,10 @@ function copyFunnyQuote() {
   navigator.clipboard.writeText(text);
   showCopyMessage.classList.remove("-right-64");
   showCopyMessage.classList.add("right-5");
+  showCopyMessage.classList.add("bg-orange-500");
+
   setTimeout(() => {
+    showCopyMessage.classList.remove("bg-orange-500");
     showCopyMessage.classList.remove("right-5");
     showCopyMessage.classList.add("-right-64");
   }, 800);
